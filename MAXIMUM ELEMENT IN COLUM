@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main()
+{
+    int arr[10][10], a, b, i, j, max;
+    printf("Enter number of rows: ");
+    scanf("%d", &a);
+    printf("Enter number the columns: ");
+    scanf("%d", &b);
+    printf("Enter elements of the matrix:\n");
+    for(i = 0; i < a; i++)
+    {
+        for(j = 0; j < b; j++)
+        {
+            scanf("%d", &arr[i][j]);
+        }
+    }
+    printf("\nMaximum element in each colum:\n");
+    for(j = 0; j< b; j++)
+    {
+        max = arr[0][j];
+        for(i = 1; i < a; i++)
+        {
+            if(arr[i][j] > max)
+            {
+                max = arr[i][j];
+            }
+        }
+        printf("Column %d: %d\n", j + 1, max);
+    }
+    return 0;
+}
