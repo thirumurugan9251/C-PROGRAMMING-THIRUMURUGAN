@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    char name[10];
+    int roll;
+    string clgname;
+    float marks;
+    cout << "Enter the name: ";
+    cin >> name;
+    cout << "Enter the roll: ";
+    cin >> roll;
+    cout << "Enter marks: ";
+    cin >> marks;
+    cout << "Enter the clgname: ";
+    cin >> clgname;
+    cout << "\n--- Student Details ---" << endl;
+    cout << name << endl;
+    cout << roll << endl;
+    cout << marks << endl;
+    cout << clgname << endl;
+    return 0;
+}
